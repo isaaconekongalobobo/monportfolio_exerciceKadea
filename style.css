@@ -1,0 +1,277 @@
+*{
+    /* Ce code permet de faire la reinitialisation de paramètre par défaut dans les éléments htm.
+     lorsqu'on met margin et padding à 0, on  élimine en faite les bordures par défaut conténu dans les éléments html.
+
+     Puis box sizing à border box permet de dire au navigateur de ne pas ajouter des pixel suplementaire dans les dimension d'un élement, mais d'incorporer ces pixel dans l'élement elle même
+     */
+    margin: 0px;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+li{
+    list-style-type: none;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: sans-serif;
+    color: rgb(53, 53, 39);
+}
+a{
+    text-decoration: none;
+    color: rgb(53, 53, 39);
+}
+body{
+    margin: auto;
+}
+p{
+    font-family: sans-serif;
+}
+.items-footer li{
+    padding-bottom: 5px;
+}
+.image-projet{
+    width: 250px;
+    height: 250px;
+}
+.onglets{
+    display: flex;
+    gap: 10px;
+    padding-top: 30px;
+    padding-left: 5%;
+    font-family: sans-serif;
+}
+.bloconglets{
+    position: relative;
+}
+.titre{
+    font-family: sans-serif;
+}
+.profil{
+    width: 280px;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    filter: grayscale();
+}
+.navbar {
+    padding: 0;
+}
+
+.navbar ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.navbar li {
+    position: relative;
+}
+
+.navbar>ul>li {
+    white-space: nowrap;
+    padding: 10px 0 10px 28px;
+}
+.nom-onglet {
+    padding-right: 75%;
+}
+.bouton{
+    width: 80px;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    border: none;
+}
+.bouton a {
+    color: #131313;
+}
+.blocprincipale{
+    padding: 20px;
+    font-family: sans-serif;
+}
+.blocprofil {
+    padding-left: 150px;
+    padding-top: 150px;
+    padding-right: 25px;
+}
+.block-experience{
+    padding-bottom: 20px;
+    list-style-type: circle;
+}
+.blocrow {
+    display: flex;
+    gap: 20px;
+}
+.blocrow-acceil{
+    display: flex;
+    gap: 20px;
+    place-items: center; 
+    padding-left: 5%;  
+    padding-bottom: 80px;
+}
+.blocrow-footer {
+    display: flex;
+    font-family: sans-serif;
+    font-size: small;
+    gap: 149px;  
+    padding-left: 160px;
+    padding-top: 5px;
+    padding-bottom: 50px;
+}
+.blocrow-projet {
+    display: flex;
+    gap: 50px;  
+    font-family: sans-serif;
+    padding-left: 20%;
+    padding-top: 5px;
+    padding-bottom: 50px;
+}
+.blocrow-formulaire{
+    display: flex;
+    gap: 50px;  
+    font-family: sans-serif;
+    padding-left: 20%;
+    padding-top: 5px;
+    padding-bottom: 50px;    
+}
+.blocrow-poste{
+    display: flex;
+    gap: 20px;
+    margin-bottom: -30px;
+    margin-top: 35px;
+}
+.bloc-contact{
+    display: block;
+    padding-right: 200px;
+}
+.champ-row{
+    display: flex;
+    gap: 50px;  
+    font-family: sans-serif;
+}
+.bloc-intro {
+    padding: 10px;
+    padding-top: 110px;
+}
+.bloc-intro h2 {
+    font-family: sans-serif;
+    font-size: 50px;
+    font-weight: bolder;
+    padding-bottom: -20px;
+}
+.btn-cv {
+    background-color: #FFB703;
+}
+.btn-projet {
+    background-color: #950101;
+}
+.btn-contact {
+    background-color: #00FFF5;
+}
+.btn-formulaire{
+    padding-top: 30px;
+}
+.date-experience{
+    font-size: small;
+    font-weight: lighter;
+    padding-top: 2px;
+    padding-left: 42.5%;
+}
+.ligne{
+    width: 1020px;
+    opacity: 80%;
+}
+.titre-generaux {
+    padding-left: 20%;
+}
+.trait {
+    width: 15px;
+    transform: rotate(0.25turn);
+    background-color: black;
+}
+.bloc-intro{
+    top: 10%;
+}
+.liste-footer{
+    font-size: 15px;
+}
+.nom-firm{
+    font-size: small;
+    font-weight: 300;
+}
+.skills{
+    font-size: 14px;
+    font-weight: 100;
+}
+
+
+/* Je crée un média query pour gerer la resonsivit de la page  */
+@media screen and (max-width:1200px) {
+    .titre{
+        display: grid;
+        place-items: center;
+    }
+}
+/* Je crée un média query pour gerer la resonsivité de la page pour smartphone  */
+@media screen and (max-width:600px) {
+    .profil{
+        width: 300px;
+        aspect-ratio: 1 / 1;
+        border-radius: 50%;
+    }
+    .blocprofil{
+        padding-left: 50px;
+        padding-top: 50px; 
+    }
+    .onglets{
+        display: flex;
+        gap: 20px;
+        padding-top: 10px;
+        font-family: sans-serif;
+        font-size: 12px;
+        font-weight: bold;
+    }
+    .nom-onglet{
+        padding-right: -0%;
+    }
+    .blocrow{
+        display: block;
+    }
+    .bloc-intro{
+        top: 10%;
+    }.blocrow-footer {
+        display: flex;
+        gap: 10px;  
+        font-family: sans-serif;
+        font-size: 10px;
+        padding: 5px;
+        padding-top: 5px;
+        padding-bottom: 10px;
+    }
+    .blocrow-projet {
+        display: block;
+        gap: 50px;  
+        font-family: sans-serif;
+        padding-left: 49px;
+        padding-top: 5px;
+        padding-bottom: 50px;
+    }
+    .blocrow-formulaire{
+        display: block;
+        font-family: sans-serif;   
+    }
+    .champ-row{
+        display: block;
+        font-family: sans-serif;
+    }
+    .titre-intro{
+        padding-left: 24%;
+    }
+    .titre-intro2{
+        padding-left: 24%; 
+    }
+    .ligne{
+        width: 500px;
+        opacity: 80%;
+    }
+ }
